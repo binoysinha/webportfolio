@@ -1,9 +1,10 @@
 import React from 'react';
 import './index.scss';
 import SocialLinks from '../SocialLinks';
-const Home = props => {
-	props.callback();
-	return (
+import Header from '../Header';
+const Home = props => (
+	<>
+		<Header />
 		<div className="home">
 			<div className="site-wrap">
 				<p>
@@ -25,7 +26,7 @@ const Home = props => {
 			<SocialLinks />
 			<footer>Designed and developed by me. Code is open sourced.</footer>
 		</div>
-	);
-};
+	</>
+);
 
 export default Home;

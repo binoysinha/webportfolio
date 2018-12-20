@@ -22,15 +22,13 @@ const Menu = () => {
 	});
 	return (
 		<nav id="main">
-			<ul>
-				<NavLink to="/" className="logo">
-					<img src={Logo} alt="binoy sinha" />
-				</NavLink>
-				<NavLink to="/">Home</NavLink>
-				<NavLink to="/skills">Skills</NavLink>
-				<NavLink to="/career">Career</NavLink>
-				<NavLink to="/testimonial">Testimonial</NavLink>
-			</ul>
+			<NavLink to="/" className="logo">
+				<img src={Logo} alt="binoy sinha" />
+			</NavLink>
+			<NavLink to="/">Home</NavLink>
+			<NavLink to="/skills">Skills</NavLink>
+			<NavLink to="/career">Career</NavLink>
+			<NavLink to="/testimonial">Testimonial</NavLink>
 		</nav>
 	);
 };

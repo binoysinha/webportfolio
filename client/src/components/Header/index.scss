@@ -36,7 +36,8 @@ header {
         transform: rotate(65.5deg);
         -webkit-transform-origin: left bottom;
         transform-origin: left bottom;
-        z-index: -1
+        z-index: -1;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     }
 
     .user-img {
@@ -65,5 +66,9 @@ header {
         font-family: var(--quote-font);
         color: #FFA500;
         font-size: 2rem;
+    }
+
+    p {
+        text-align: right;
     }
 }
