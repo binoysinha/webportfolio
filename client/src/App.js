@@ -1,28 +1,64 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.scss';
+import Menu from './components/Menu';
+import Home from './components/Home';
+import Header from './components/Header';
+
+const Skills = lazy(() => import('./components/Skills'));
+const Career = lazy(() => import('./components/Career'));
+const About = lazy(() => import('./components/About'));
+const Testimonials = lazy(() => import('./components/Testimonials'));
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+	state = {
+		toggleHeader: false
+	};
+
+	// componentDidMount() {
+
+	// }
+	showHeader = () => {
+		this.setState(prevState => ({
+			toggleHeader: true
+		}));
+		console.log('heeee');
+	};
+	hideHeader = () => {
+		this.setState(prevState => ({
+			toggleHeader: false
+		}));
+		console.log('heeee');
+	};
+
+	shouldComponentUpdate(nextProps, nextState, nextContext) {
+		return nextState.toggleHeader !== this.state.toggleHeader;
+	}
+	render() {
+		let { toggleHeader } = this.state;
+		let routes = (
+			<Suspense fallback={<Loading />}>
+				<Menu />
+
+				{toggleHeader ? <Header /> : null}
+				<Switch>
+					<Route path="/career" component={() => <Career callback={this.hideHeader} />} />
+					<Route path="/skills" component={() => <Skills callback={this.hideHeader} />} />
+					<Route path="/about" component={() => <About callback={this.hideHeader} />} />
+					<Route path="/testimonials" component={() => <Testimonials callback={this.hideHeader} />} />
+					<Route path="/" exact component={() => <Home callback={this.showHeader} />} />
+					{/* <Redirect to="/" /> */}
+				</Switch>
+			</Suspense>
+		);
+		return (
+			<section className="">
+				<Router>{routes}</Router>
+			</section>
+		);
+	}
 }
 
 export default App;
+
+const Loading = () => <p>Loading</p>;

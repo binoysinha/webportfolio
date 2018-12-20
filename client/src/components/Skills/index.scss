@@ -1,0 +1,147 @@
+.skill-container {
+    background: #f8f9fa;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+
+    .quote {
+        width: 520px;
+    }
+}
+
+.skills-icon {
+    position: relative;
+    height: 300px;
+    width: 300px;
+
+}
+
+
+
+
+
+.smoke {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    left: 10%;
+    //top: -20px;
+    bottom: 50px;
+
+    svg,
+    i {
+        font-size: 4rem;
+        color: #FF5722;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        bottom: -35px;
+        left: 50%;
+        height: 1px;
+        width: 1px;
+        box-shadow: 0px 0px 100px 100px white;
+        border-radius: 50%;
+        left: 0;
+        opacity: 0;
+        transform: scale(0.2);
+    }
+
+    .s0 {
+        animation: smokeleft 5s 1s infinite;
+    }
+
+    .s1 {
+        animation: smokeright 5s 3s infinite;
+    }
+
+    .s2 {
+        animation: smokeleft 5s 4s infinite;
+    }
+
+    .s3 {
+        animation: smokeright 5s 5s infinite;
+    }
+
+    .s4 {
+        animation: smokeleft 5s 6s infinite;
+    }
+
+    .s5 {
+        animation: smokeright 5s 7s infinite;
+    }
+
+    .s6 {
+        animation: smokeleft 5s 8s infinite;
+    }
+
+    .s7 {
+        animation: smokeright 5s 9s infinite;
+    }
+
+    .s8 {
+        animation: smokeleft 5s 10s infinite;
+    }
+
+    .s9 {
+        animation: smokeright 5s 11s infinite;
+    }
+
+    .s10 {
+        animation: smokeleft 5s 12s infinite;
+    }
+
+    .s11 {
+        animation: smokeright 5s 13s infinite;
+    }
+
+    .s12 {
+        animation: smokeleft 5s 14s infinite;
+    }
+
+}
+
+@keyframes smokeleft {
+    0% {
+        transform: scale(0.2) translate(0, 0);
+    }
+
+    10% {
+        opacity: 0.8;
+        transform: scale(0.3) translate(-20px, -80px);
+    }
+
+    100% {
+        opacity: 0.1;
+        transform: scale(1) translate(-80px, -340px);
+    }
+}
+
+
+@keyframes smokeright {
+    0% {
+        transform: scale(0.2) translate(40px, 0);
+    }
+
+    10% {
+        opacity: 0.8;
+        transform: scale(0.3) translate(100px, -80px);
+    }
+
+    100% {
+        opacity: 0.1;
+        transform: scale(1) translate(90px, -340px);
+    }
+}
+
+
+@keyframes tea {
+    0% {
+        box-shadow: inset 0px 0px 0px 0px rgba(162, 46, 20, 0.84);
+    }
+
+    100% {
+        box-shadow: inset 0px -320px 0px 0px rgba(162, 46, 20, 0.84);
+    }
+}

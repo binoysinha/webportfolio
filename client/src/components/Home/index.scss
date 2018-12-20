@@ -1,0 +1,13 @@
+.home {
+    position: relative;
+
+    footer {
+        position: absolute;
+        bottom: -25%;
+        color: white;
+        left: 42%;
+        transform: rotate(-25deg);
+        font-family: var(--heading-font);
+        font-size: .75rem;
+    }
+}

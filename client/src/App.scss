@@ -1,0 +1,160 @@
+:root {
+  --white: #fff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #868e96;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --black: #000;
+  --primary: #fed136;
+  --heading-font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --quote-font: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+// Font Mixins
+@mixin serif-font {
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@mixin script-font {
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@mixin body-font {
+  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@mixin heading-font {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+
+  //background: #ccc
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include body-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: var(--primary);
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+  @include heading-font;
+}
+
+section {
+  // padding: 100px 0;
+
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    @include serif-font;
+  }
+}
+
+@media(min-width:768px) {
+  section {
+    //  padding: 150px 0;
+  }
+}
+
+// Button Styles
+.btn {
+  @include heading-font;
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+// .btn-primary {
+//   background-color: var(--primary);
+//   border-color: var(--primary);
+
+//   &:active,
+//   &:focus,
+//   &:hover {
+//     background-color: darken(var(--primary), 7.5%) !important;
+//     border-color: darken(var(--primary), 7.5%) !important;
+//     color: white;
+//   }
+
+//   &:active,
+//   &:focus {
+//     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, .5) !important;
+//   }
+// }
+
+// Highlight color customization
+::-moz-selection {
+  background: var(--primary);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--primary);
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
