@@ -9,7 +9,7 @@
     transition: transform 0.5s;
 }
 
-body.fixed-nav .site-wrap {
+fixed-nav .site-wrap {
     transform: scale(1);
 }
 
@@ -27,7 +27,13 @@ header {
     &:after {
         content: "";
         position: absolute;
-        background-color: blue;
+        //background-color: #005C97; //var(--purple);
+        background: #005C97;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #363795, #005C97);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #363795, #005C97);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         padding-bottom: 141.42136%;
         width: 100%;
         bottom: 0;
@@ -59,16 +65,36 @@ header {
 
 }
 
+.svg-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 320px;
+}
 
+.shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #19f6e8;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
 
-.quote {
-    blockquote {
-        font-family: var(--quote-font);
-        color: #FFA500;
-        font-size: 2rem;
-    }
+.text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: #fff;
+    top: -48px;
+    position: relative;
+}
 
-    p {
-        text-align: right;
-    }
+.svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
 }

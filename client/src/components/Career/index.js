@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './index.scss';
 import Img1 from '../../assets/img/inmobi.png';
@@ -6,7 +6,7 @@ import Img2 from '../../assets/img/redbus.png';
 import Img3 from '../../assets/img/TCS-Logo.png';
 
 const Career = () => (
-	<section className="career-sctn">
+	<section className="career-sctn animated fadeIn">
 		<div className="quote">
 			<blockquote>"It’s not what you achieve, it’s what you overcome. That’s what defines your career."</blockquote>
 			<p>Carlton Fisk</p>
@@ -23,7 +23,7 @@ const Career = () => (
 					<ul className="timeline">
 						<li>
 							<div className="timeline-image">
-								<img className="rounded-circle img-fluid" src={Img1} alt />
+								<img className="rounded-circle img-fluid" src={Img1} alt="inmobi" />
 							</div>
 							<div className="timeline-panel">
 								<div className="timeline-heading">
@@ -41,7 +41,7 @@ const Career = () => (
 						</li>
 						<li className="timeline-inverted">
 							<div className="timeline-image">
-								<img className="rounded-circle img-fluid" src={Img2} alt />
+								<img className="rounded-circle img-fluid" src={Img2} alt="redbus" />
 							</div>
 							<div className="timeline-panel">
 								<div className="timeline-heading">
@@ -59,7 +59,7 @@ const Career = () => (
 						</li>
 						<li>
 							<div className="timeline-image">
-								<img className="rounded-circle img-fluid" src={Img3} alt />
+								<img className="rounded-circle img-fluid" src={Img3} alt="tcs" />
 							</div>
 							<div className="timeline-panel">
 								<div className="timeline-heading">
