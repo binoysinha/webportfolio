@@ -1,9 +1,0 @@
-sudo: required
-services:
-  - docker
-
-before_install:
-  - docker build -t vinay0079/webportfolio-client -f Dockerfile.dev .
-
-script:
-  - docker run vinay0079/webportfolio-client npm run test -- --coverage

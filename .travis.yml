@@ -1,0 +1,22 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t vinay0079/webportfolio-client -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run vinay0079/webportfolio-client npm run test -- --coverage
+
+deploy:
+  provider: elasticbeakstalk
+  region: "ap-southeast-1"
+  name: "webportfolio"
+  env: "Webportfolio-env"
+  bucket_name: "elasticbeanstalk-ap-southeast-1-151481170580"
+  bucket_path: "webportfolio"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
