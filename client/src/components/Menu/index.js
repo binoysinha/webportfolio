@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './index.scss';
 import Logo from '../../assets/img/logo.png';
-const Menu = () => 
+const Menu = () => (
 	// useEffect(() => {
 	// 	const nav = document.querySelector('#main');
 	// 	let topOfNav = nav.offsetTop;
@@ -20,17 +20,14 @@ const Menu = () =>
 
 	// 	window.addEventListener('scroll', fixNav);
 	// });
-	 (
-		<nav id="main">
-			<NavLink to="/" className="logo">
-				<img src={Logo} alt="binoy sinha" />
-			</NavLink>
-			<NavLink to="/skills">Skills</NavLink>
-			<NavLink to="/projects">Projects</NavLink>
-			<NavLink to="/career">Career</NavLink>
-			<NavLink to="/contact">Conatct Me</NavLink>
-		</nav>
-	)
-;
-
+	<nav id="main">
+		<NavLink to="/" className="logo">
+			<img src={Logo} alt="binoy sinha" />
+		</NavLink>
+		<NavLink to="/skills">Skills</NavLink>
+		<NavLink to="/projects">Projects</NavLink>
+		<NavLink to="/career">Career</NavLink>
+		<NavLink to="/contact">Conatct Me</NavLink>
+	</nav>
+);
 export default Menu;

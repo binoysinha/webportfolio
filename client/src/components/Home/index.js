@@ -14,6 +14,7 @@ const Home = props => (
 				<p>
 					My journey as web developer begins seven years ago. From showing a simple <code>{'{{hello world}} '}</code>
 					text on browser to developing complex web application aptly defined my growth as a developer.
+					{/* It brings out your creativity */}
 				</p>
 				<p>
 					My passion and love for Javascript enabled me to move to backend development also and these days exploring ML
