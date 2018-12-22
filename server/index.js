@@ -1,20 +1,27 @@
 const express = require('express');
 const redis = require('redis');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const keys = require('./keys');
 
+const PORT = keys.serverPort || 5000;
 
 const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+
 const client = redis.createClient({
-    host: 'redis-server',
-    port: 6379
+    host: keys.redisHost,
+    port: keys.redisPort,
+    retry_strategy: () => 1000
 });
 
-client.set('visits', 0);
+client.set('visits', 123);
 
-const PORT = 8081;
 
-app.get('/', (req, res) => {
+app.get('/visits', (req, res) => {
     client.get('visits', (err, visits) => {
-        res.send('Number of user visits is ' + visits);
+        res.send({visits});
         client.set('visits', parseInt(visits) + 1);
     });
 });
