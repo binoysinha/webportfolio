@@ -1,10 +1,13 @@
 {
     "dependencies": {
-        "express": "4.16.4",
-        "redis": "2.8.0",
+        "@sendgrid/mail": "^6.3.1",
+        "body-parser": "1.18.3",
         "cors": "2.8.5",
+        "express": "4.16.4",
+        "helmet": "^3.15.0",
+        "nodemailer": "^4.7.0",
         "nodemon": "1.18.9",
-        "body-parser": "1.18.3"
+        "redis": "2.8.0"
     },
     "scripts": {
         "dev": "nodemon",

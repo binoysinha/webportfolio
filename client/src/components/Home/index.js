@@ -32,7 +32,7 @@ class Home extends Component {
 				<Header />
 				<div className="home">
 					<div className="site-wrap animated fadeInUp">
-						Welcome, vistors no {totalVisits}
+						Welcome&nbsp;
 						<span role="img" aria-label="greetings">
 							🙏
 						</span>
@@ -60,8 +60,16 @@ class Home extends Component {
 							<p>Mario Duarte</p>
 						</div>
 					</div>
+					<hr />
 					<SocialLinks />
-					<footer>Designed and developed by me. Code is open sourced.</footer>
+
+					<footer className="addl-info">
+						<div className="visitor-count">
+							You are vistors no.&nbsp;
+							<strong>{totalVisits}</strong>
+						</div>
+						<p>Designed and developed by me.</p>
+					</footer>
 				</div>
 			</>
 		);

@@ -1,94 +1,260 @@
 .contact {
-    width: 740px;
+    width: 90%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 25px;
+    overflow: hidden;
 
-    .absolute {
-        position: absolute;
-    }
-
-    input,
-    textarea {
-        font-family: "Homemade Apple";
-        background: transparent;
-        border: none;
-    }
-
-    input {
-        margin-left: 10px;
-        width: 240px;
-        font-size: 0.8em;
-        letter-spacing: 2px;
-        padding: 5px;
+    h3 {
+        display: none;
     }
 
     .postcard {
-        position: relative;
-        height: 498px;
-        background: url('https://developer.mozilla.org/files/4151/background.jpg');
-        /*img from: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Styling_HTML_forms */
-        font-family: "MedievalSharp";
-        border: 2px solid #ccc;
-        box-shadow: 7px 7px 20px #555;
-    }
+        overflow: scroll;
 
-    .receiver {
-        right: 40px;
-        top: 185px;
-    }
+        >div {
+            margin: 25px 0;
+        }
 
-    .sender {
-        right: 40px;
-        top: 235px;
-    }
+        input,
+        textarea {
+            background: transparent;
+            border: none;
+            font-size: 1rem;
+            padding: 15px;
+            border: 1px solid var(--blue);
+            border-radius: 5px;
+            width: 100%;
 
-    .reply {
-        right: 40px;
-        top: 290px;
-    }
+        }
 
-    .message {
-        left: 25px;
-        top: 100px;
-    }
+        input {
+            letter-spacing: 2px;
+            margin-top: 10px;
+            font-weight: normal;
+        }
 
-    .message textarea {
-        margin-top: 10px;
-        padding: 10px;
-        font-size: 0.7em;
-        background: transparent;
-        letter-spacing: 3px;
-        line-height: 1.5em;
-    }
+        label {
+            font-size: .8em;
+        }
 
-    .send-btn {
-        right: 130px;
-        top: 360px;
-    }
 
-    button {
-        font: 0.6em sans-serif;
-        font-weight: bold;
-        padding: 10px;
-        background: transparent;
-        border: 2px solid black;
-        border-radius: 5px;
-        transform: rotate(-1.5deg);
-    }
+        .message textarea {
+            margin-top: 10px;
+            padding: 10px;
+            background: transparent;
+            letter-spacing: 3px;
+            line-height: 1.5em;
+            height: 300px;
+        }
 
-    .send-btn:hover {
-        background: #ccc;
-        top: 362px;
-    }
 
-    textarea:focus,
-    input:focus,
-    button:focus {
-        outline: 0;
+
+        .send-mail-btn {
+            border: 2px solid var(--blue);
+            border-radius: 10px;
+            color: var(--blue);
+            padding: 15px 35px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 70px;
+            background: white;
+            width: 100%;
+            font-size: .8em;
+        }
+
+        .send-btn:hover {
+            background: #ccc;
+            top: 362px;
+        }
+
+
     }
 
     svg {
         color: black;
         font-size: 1rem;
+    }
+
+    hr {
+
+        margin-top: -30px;
+    }
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    height: 498px;
+    margin-top: 30px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+    &.flip {
+        transform: rotateY(180deg);
+
+    }
+}
+
+
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+// .flip-card-front {
+//     background-color: #bbb;
+//     color: black;
+//     z-index: 2;
+// }
+
+.flip-card-back {
+    background-color: var(--blue);
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+    text-align: center;
+
+}
+
+.mail-img {
+    height: 200px;
+    margin: 40px 0;
+}
+
+.mail-again-btn {
+    border: 2px solid rgb(237, 248, 255);
+    border-radius: 10px;
+    color: var(--blue);
+    padding: 15px 35px;
+    background: white;
+}
+
+.or {
+    width: 35px;
+    margin: 0 auto;
+    background: white;
+    position: relative;
+    top: 0px;
+    text-align: center;
+}
+
+@media(min-width:992px) {
+    .contact {
+        width: 740px;
+        text-align: center;
+
+        h3 {
+            display: block;
+        }
+
+        .or {
+            top: 10px;
+
+        }
+
+        svg {
+            color: black;
+            font-size: 1.5rem;
+        }
+
+        .flip-card-inner {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .postcard {
+            //position: relative;
+            background: url('https://developer.mozilla.org/files/4151/background.jpg');
+            /*img from: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Styling_HTML_forms */
+            font-family: "MedievalSharp";
+            border: 2px solid #ccc;
+            box-shadow: 7px 7px 20px #555;
+            filter: sepia(0.5);
+
+            .absolute {
+                position: absolute;
+                margin: 0;
+            }
+
+            input,
+            textarea {
+                font-family: "Homemade Apple";
+                border: 0px;
+                padding: 0px;
+
+            }
+
+            input {
+                margin-left: 10px;
+                width: 240px;
+                padding: 5px;
+                border: 0px;
+                font-size: 1em;
+                margin-top: 0px;
+
+            }
+
+            .receiver {
+                right: 40px;
+                top: 185px;
+            }
+
+            .sender {
+                right: 40px;
+                top: 235px;
+            }
+
+            .reply {
+                right: 40px;
+                top: 290px;
+            }
+
+            .message {
+                left: 25px;
+                top: 100px;
+            }
+
+            .send-btn {
+                right: 130px;
+                top: 360px;
+            }
+
+            .send-mail-btn {
+                font: 0.6em sans-serif;
+                font-weight: bold;
+                padding: 10px;
+                background: transparent;
+                border: 2px solid black;
+                border-radius: 5px;
+                transform: rotate(-1.5deg);
+                width: auto;
+                margin-top: 0px;
+            }
+
+            .send-btn:hover {
+                background: #ccc;
+                top: 362px;
+            }
+
+            textarea {
+                width: 350px;
+            }
+
+            textarea:focus,
+            input:focus,
+            button:focus {
+                outline: 0;
+            }
+        }
     }
 }

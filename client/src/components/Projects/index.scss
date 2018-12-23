@@ -1,14 +1,35 @@
 .project-sctn {
-    width: 768px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
+
+
+    p {
+        font-size: .8rem;
+    }
 
 }
 
 .link-btn {
-    border: 2px solid rgb(237, 248, 255);
+    border: 2px solid var(--blue);
     border-radius: 10px;
-    color: #005C97;
+    color: var(--blue);
     padding: 15px 35px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+}
 
+@media(min-width:992px) {
+    .project-sctn {
+        width: 768px;
+
+        p {
+            font-size: 1rem;
+        }
+
+        .link-btn {
+            width: 200px;
+        }
+    }
 }

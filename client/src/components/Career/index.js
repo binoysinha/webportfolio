@@ -11,6 +11,7 @@ const Career = () => (
 			<blockquote>"It’s not what you achieve, it’s what you overcome. That’s what defines your career."</blockquote>
 			<p>Carlton Fisk</p>
 		</div>
+		<hr />
 		<div className="container">
 			<div className="row">
 				{/* <div className="col-lg-12 text-center">
@@ -68,9 +69,10 @@ const Career = () => (
 								</div>
 								<div className="timeline-body">
 									<p className="text-muted">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam
-										reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore
-										laudantium consectetur!
+										I joined TCS in early 2012 as an assistant system enginner. After the completion of 3 months of
+										training, I was posted in Bangalore. My first tryst with software development took place in TCS. My
+										work profile was UI developer, where I had opportunity to work in various projects. From developing
+										hybrid mobile applications, to working with drupal cms and salesforce, I learnt a lot there.
 									</p>
 								</div>
 							</div>
@@ -86,15 +88,16 @@ const Career = () => (
 								</div>
 								<div className="timeline-body">
 									<p className="text-muted">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam
-										reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore
-										laudantium consectetur!
+										Oh yes, I am an engineer. Year 2011 will always a milestone in my life. Although, my subject was
+										Electronics and Communication, my inclination was towards software development. I got placed in TCS
+										and then the journey started.
 									</p>
 								</div>
 							</div>
 						</li>
 						<li className="timeline-inverted">
 							<div className="timeline-image">
+								<i className="fas fa-fighter-jet" />
 								<h4>Starts</h4>
 							</div>
 						</li>

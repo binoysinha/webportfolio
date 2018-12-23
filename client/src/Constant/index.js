@@ -109,4 +109,4 @@ export const COLORS = ['pizelex', 'purplin', 'blush', 'brown', 'orange', 'green'
 
 export const BORDER_COLORS = ['#e53935', '#6a3093', '#dcb386', '#e14949', '#FFB75E', '#76b852', '#005C97'];
 
-export const SKILL_CATEGORY = ['Frontend', 'Backend', 'Devops', 'Random Skills'];
+export const SKILL_CATEGORY = ['Frontend', 'Backend', 'Devops', 'Misc'];

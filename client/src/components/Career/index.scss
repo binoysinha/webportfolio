@@ -1,9 +1,11 @@
 // Styling for the timeline section
 .career-sctn {
+    width: 90%;
+    margin: 0 auto;
+
     .quote {
-        width: 62%;
         text-align: center;
-        margin: 0 auto;
+        margin-bottom: 40px;
 
     }
 }
@@ -22,6 +24,7 @@
     position: relative;
     padding: 0;
     list-style: none;
+    margin-top: 50px;
 
     &:before {
         position: absolute;
@@ -91,9 +94,14 @@
             }
 
             svg {
-                color: var(--primary);
-                font-size: 5rem;
-                margin-top: 25px;
+                color: var(--blue);
+                font-size: 2rem;
+                margin-top: 15%;
+
+            }
+
+            .fa-fighter-jet {
+                transform: rotate(-90deg);
 
             }
         }
@@ -143,7 +151,7 @@
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:992px) {
     .timeline {
         &:before {
             left: 50%;
@@ -170,6 +178,10 @@
                     font-size: 13px;
                     line-height: 18px;
                     margin-top: 16px;
+                }
+
+                svg {
+                    font-size: 4rem;
                 }
             }
 
@@ -200,6 +212,10 @@
                     font-size: 18px;
                     line-height: 26px;
                     margin-top: 30px;
+                }
+
+                svg {
+                    font-size: 5rem;
                 }
             }
 
@@ -234,32 +250,4 @@
             }
         }
     }
-}
-
-.align-left {
-    float: left;
-    margin-right: 20px;
-}
-
-.align-right {
-    float: right;
-    margin-left: 20px;
-}
-
-.slide-in {
-    opacity: 0;
-    transition: all .5s;
-}
-
-.align-left.slide-in {
-    transform: translateX(-30%) scale(0.95);
-}
-
-.align-right.slide-in {
-    transform: translateX(30%) scale(0.95);
-}
-
-.slide-in.active {
-    opacity: 1;
-    transform: translateX(0%) scale(1);
 }
