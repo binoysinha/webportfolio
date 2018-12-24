@@ -4,13 +4,15 @@
             "name": "client",
             "image": "vinay0079/webportfolio-client",
             "hostname": "client",
-            "essential": false
+            "essential": false,
+            "memory": 256
         },
         {
             "name": "server",
             "image": "vinay0079/webportfolio-server",
             "hostname": "backend",
-            "essential": false
+            "essential": false,
+            "memory": 256
         },
         {
             "name": "nginx",
@@ -21,7 +23,9 @@
                 "hostPort": 80,
                 "containerPort": 80
             }],
-            "links": ["client", "server"]
+            "links": ["client", "server"],
+            "memory": 256
+
         }
     ]
 }
