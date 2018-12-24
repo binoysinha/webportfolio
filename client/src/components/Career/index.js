@@ -51,9 +51,11 @@ const Career = () => (
 								</div>
 								<div className="timeline-body">
 									<p className="text-muted">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam
-										reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore
-										laudantium consectetur!
+										At Redbus, I was responsible for leading the development for high-traffic ecommerce websites. I
+										oversee the building of redBus hotels mobile web application and different other B2C applications. I
+										was instrumental in structuring and developing several internal systems comprising Redbus SEO CMS,
+										Marketing Campaign automation tool and production workflow tracking, as well as designed custom REST
+										APIs built in NodeJS.
 									</p>
 								</div>
 							</div>
@@ -88,9 +90,9 @@ const Career = () => (
 								</div>
 								<div className="timeline-body">
 									<p className="text-muted">
-										Oh yes, I am an engineer. Year 2011 will always a milestone in my life. Although, my subject was
-										Electronics and Communication, my inclination was towards software development. I got placed in TCS
-										and then the journey started.
+										Year 2011 will always a milestone in my life. Although, my subject was Electronics and
+										Communication, my inclination was towards software development. I got placed in TCS and then the
+										journey started.
 									</p>
 								</div>
 							</div>

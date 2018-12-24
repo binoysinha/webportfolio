@@ -50,9 +50,9 @@ class Contact extends Component {
 			<section className="contact animated fadeIn">
 				<h3>Get in touch.</h3>
 				<SocialLinks />
-				<a href={Resume} download="Binoy Sinha Resume">
+				{/* <a href={Resume} download="Binoy Sinha Resume">
 					Resume
-				</a>
+				</a> */}
 				<div className="or">
 					<p>OR</p>
 				</div>

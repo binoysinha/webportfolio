@@ -8,6 +8,17 @@ before_install:
 script:
   - docker run vinay0079/webportfolio-client npm run test -- --coverage
 
+after_success:
+  - docker build -t vinay0079/webportfolio-client ./client
+  - docker build -t vinay0079/webportfolio-nginx ./nginx
+  - docker build -t vinay0079/webportfolio-server ./server
+  # Log in to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Take those images and push them to docker hub
+  - docker push vinay0079/webportfolio-client
+  - docker push vinay0079/webportfolio-nginx
+  - docker push vinay0079/webportfolio-server
+
 deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-1"
