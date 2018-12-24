@@ -3,7 +3,7 @@ import './index.scss';
 import Img2 from '../../assets/img/user.jpg';
 
 const Header = () => (
-	<header>
+	<header className="home-header">
 		{/* <h4>{'{{hello world}}'}</h4> */}
 		{/* <div className="quote">
 			<blockquote>"Talk is Cheap. Show me the code"</blockquote>

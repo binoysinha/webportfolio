@@ -1,23 +1,30 @@
 const express = require('express');
-const redis = require('redis');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const helmet = require('helmet');
+const keys = require('./keys');
 
-
+const PORT = keys.serverPort || 5000;
 const app = express();
-const client = redis.createClient({
-    host: 'redis-server',
-    port: 6379
-});
+var whitelist = ['http://localhost:5000', 'https://www.binoysinha.com']
+// var corsOptions = {
+//   origin: function (origin, callback) {
+//       console.log(origin);
+//     if (whitelist.indexOf(origin) !== -1) {
+//       callback(null, true)
+//     } else {
+//       callback(new Error('Not allowed by CORS'))
+//     }
+//   }
+// }
 
-client.set('visits', 0);
+app.use(helmet());
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended:false }));
+app.use(bodyParser.json());
 
-const PORT = 8081;
-
-app.get('/', (req, res) => {
-    client.get('visits', (err, visits) => {
-        res.send('Number of user visits is ' + visits);
-        client.set('visits', parseInt(visits) + 1);
-    });
-});
+require('./routes/visits')(app);
+require('./routes/sendmail')(app);
 
 app.listen(PORT, () => {
     console.log('Listening on port ' + PORT);

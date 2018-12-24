@@ -44,10 +44,13 @@ class Skills extends Component {
 				</div>
 
 				<ul className="skill-tab">{skillTabs}</ul>
-				{selectedTab !== 'Random Skills' ? (
+				{selectedTab !== 'Misc' ? (
 					<div className="skill-wrapper">
 						<BarLines data={SKILLS_SET[selectedTab]} />
-						<div className="skills-desc">{SKILLS_SET.desc[selectedTab]}</div>
+						<div className="skills-desc">
+							<h3 className="skill-smry">Brief description</h3>
+							{SKILLS_SET.desc[selectedTab]}
+						</div>
 					</div>
 				) : (
 					<RandomSkills />
@@ -58,7 +61,7 @@ class Skills extends Component {
 }
 
 const RandomSkills = () => (
-	<div className="random-skills">
+	<div className="misc-skills">
 		<ul className="fa-ul mb-0">
 			<li>
 				<i className="fa-li fa fa-trophy text-warning" />
