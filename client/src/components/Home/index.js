@@ -39,13 +39,13 @@ class Home extends Component {
 						<p>
 							My journey as web developer begins seven years ago. From showing a simple{' '}
 							<code>{'{{hello world}} '}</code>
-							text on browser to developing complex web application aptly defined my growth as a developer. I tend to
-							code things from scratch, and enjoy bringing ideas to life in the browser.
+							text on browser to developing complex web application aptly defined my growth as a developer.
 						</p>
 						<p>
 							I have experience in building both large e-commerce applications as well as enterprise applications. For
 							me coding is a hobby, and like building stuffs for the web. I firmly believe that learning is a lifelong
-							process. I spent more times on Udemy than on Netflix.
+							process. I have a passion for understanding things at a fundamental level and sharing it as clearly as
+							possible.
 						</p>
 						<p>
 							I don't restrict myself to tech space only. I have keen interest in world affairs from politics to
