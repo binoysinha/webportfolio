@@ -68,7 +68,7 @@ class Home extends Component {
 							You are vistors no.&nbsp;
 							<strong>{totalVisits}</strong>
 						</div>
-						<p>Designed and developed by me.</p>
+						<p>© Designed and developed by me.</p>
 					</footer>
 				</div>
 			</>

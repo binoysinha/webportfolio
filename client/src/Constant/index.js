@@ -39,13 +39,9 @@ export const SKILLS_SET = {
 			val: '80'
 		},
 		{
-			type: 'Testing(Jest, react-testing-library',
+			type: 'Testing (Jest, react-testing-library',
 			val: '80'
 		}
-		// {
-		// 	type: 'Tooling',
-		// 	val: '90'
-		// }
 	],
 	Backend: [
 		{
@@ -97,7 +93,7 @@ export const SKILLS_SET = {
 	],
 	desc: {
 		Frontend:
-			'I have been developing client-side application since the start of my career. React, graphQL, jest and react-testing-library is the tech stack which I am using heavily to build frontend side of applications. I have also bulit an ecommerce application on vue js.',
+			'I have been developing client-side application since the start of my career. React, graphQL, jest and react-testing-library is the tech stack which I am using heavily to build frontend side of applications. Apart from this, had experience working with Vue js and building hybrid mobile applications.',
 		Backend:
 			' I have used Node JS for server side coding and as a Backed for Frontend(BFF) layer for frontend applications. Experienced in both SQL and NoSQL, and have used MongoDB, PostgreSQL, firebase, redis. Also, tried my hands on go',
 		Devops:

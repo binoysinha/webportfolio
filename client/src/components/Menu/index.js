@@ -28,7 +28,12 @@ class Menu extends Component {
 				<div className="menu-wrapper">
 					<div className="top-bar" onClick={this.toggleMenu}>
 						<div className="selected-menu">{selectedMenu}</div>
-						<i className="toggle-btn fa fa-bars fa-2x" />
+						{/* <i className="toggle-btn fa fa-bars fa-2x" /> */}
+						<div className={`nav-icon ripple ${toggleState ? 'open' : ''}`}>
+							<span />
+							<span />
+							<span />
+						</div>
 					</div>
 					<nav
 						id="main"
@@ -41,11 +46,19 @@ class Menu extends Component {
 						<NavLink to="/" className="logo">
 							<img src={Logo} alt="binoy sinha" />
 						</NavLink>
-
 						<NavLink to="/skills">Skills</NavLink>
 						<NavLink to="/projects">Projects</NavLink>
 						<NavLink to="/career">Career</NavLink>
 						<NavLink to="/contact">Conatct Me</NavLink>
+						<a
+							href="https://res.cloudinary.com/vmina/image/upload/v1545742133/BinoySinhaResume.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-labelledby="resume"
+							download="Binoy Sinha Resume"
+						>
+							Resume
+						</a>
 					</nav>
 				</div>
 			</>

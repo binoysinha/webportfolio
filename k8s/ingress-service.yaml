@@ -7,6 +7,11 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
     certmanager.k8s.io/cluster-issuer: "letsencrypt-prod"
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "GET, POST, OPTIONS"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://www.binoysinha.com"
+    nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
+    nginx.ingress.kubernetes.io/enable-owasp-core-rules: "true"
 spec:
   tls:
     - hosts:
