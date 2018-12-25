@@ -1,15 +1,28 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
+  "name": "Binoy Sinha - full-stack web developer",
+  "short_name": "Binoy Sinha",
+  "icons": [{
+      "src": "",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait-primary",
+  "background_color": "#fff",
+  "theme_color": "#005C97",
+  "description": "Binoy Sinha - full-stack web developer",
+  "dir": "ltr",
+  "lang": "en-US"
 }

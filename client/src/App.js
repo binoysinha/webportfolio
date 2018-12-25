@@ -38,4 +38,4 @@ class App extends Component {
 
 export default App;
 
-const Loading = () => <p>Loading</p>;
+const Loading = () => <p />;

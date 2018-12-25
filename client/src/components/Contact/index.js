@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './index.scss';
 import SocialLinks from '../SocialLinks';
 import MailRecivedImg from '../../assets/img/mail-recieved.png';
-import Resume from '../../assets/resume.pdf';
 
 class Contact extends Component {
 	state = {
