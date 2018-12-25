@@ -33,9 +33,8 @@ const Career = () => (
 								</div>
 								<div className="timeline-body">
 									<p className="text-muted">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam
-										reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore
-										laudantium consectetur!
+										At Inmobi, I started working on B2B and large enterprise applications. From learning new
+										technologies, to understanding how digital advertising works, clearly enriched my knowledge base.
 									</p>
 								</div>
 							</div>

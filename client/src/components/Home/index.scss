@@ -50,6 +50,7 @@
         }
 
         blockquote {
+            padding: 20px 0;
             font-size: .8rem;
         }
 
@@ -60,6 +61,8 @@
         }
 
         .social-icons {
+            margin-top: 130px;
+
             svg {
                 color: white;
                 font-size: 2rem;
@@ -67,9 +70,13 @@
         }
 
         .site-wrap {
-            margin: 70px auto;
+            margin: 30px auto;
             font-size: 1rem;
             box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        hr {
+            display: none;
         }
 
     }
