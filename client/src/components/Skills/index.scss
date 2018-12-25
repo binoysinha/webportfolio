@@ -18,6 +18,11 @@
         blockquote {
             color: white;
         }
+
+        p {
+            color: white;
+            font-size: .6rem
+        }
     }
 
     .skills-icon {
@@ -265,6 +270,10 @@
 
         .bar-row {
             width: 700px;
+
+            .bar-info {
+                font-size: .7rem;
+            }
         }
     }
 
