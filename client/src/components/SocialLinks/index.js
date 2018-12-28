@@ -6,20 +6,20 @@ const SocialLinks = () => (
 			href="https://www.linkedin.com/in/binoykumarsinha"
 			target="_blank"
 			rel="noopener noreferrer"
-			aria-labelledby="Linkedin"
+			aria-label="Linkedin"
 		>
 			<i className="fab fa-linkedin-in" />
 		</a>
-		<a href="https://github.com/binoysinha" target="_blank" rel="noopener noreferrer" aria-labelledby="github">
+		<a href="https://github.com/binoysinha" target="_blank" rel="noopener noreferrer" aria-label="github">
 			<i className="fab fa-github" />
 		</a>
-		<a href="https://twitter.com/vinay0079" target="_blank" rel="noopener noreferrer" aria-labelledby="twitter">
+		<a href="https://twitter.com/vinay0079" target="_blank" rel="noopener noreferrer" aria-label="twitter">
 			<i className="fab fa-twitter" />
 		</a>
-		<a href="https://hub.docker.com/u/vinay0079" target="_blank" rel="noopener noreferrer" aria-labelledby="docker">
+		<a href="https://hub.docker.com/u/vinay0079" target="_blank" rel="noopener noreferrer" aria-label="docker">
 			<i className="fab fa-docker" />
 		</a>
-		<a href="https://www.facebook.com/vinay0079" target="_blank" rel="noopener noreferrer" aria-labelledby="facebook">
+		<a href="https://www.facebook.com/vinay0079" target="_blank" rel="noopener noreferrer" aria-label="facebook">
 			<i className="fab fa-facebook-f" />
 		</a>
 	</div>

@@ -20,26 +20,29 @@ export const SKILLS_SET = {
 		},
 		{
 			type: 'CSS3',
+			subtype: 'Along with css preprocessors',
 			val: '95'
 		},
 		{
 			type: 'Javascript',
-			val: '90'
+			val: '95'
 		},
 		{
 			type: 'React',
-			val: '90'
+			val: '95'
 		},
 		{
 			type: 'Vue JS',
 			val: '70'
 		},
 		{
-			type: 'GraphQl',
+			type: 'GraphQL',
 			val: '80'
 		},
 		{
-			type: 'Testing (Jest, react-testing-library',
+			type: 'Testing',
+			subtype: 'Jest, react-testing-library',
+
 			val: '80'
 		}
 	],
@@ -51,10 +54,6 @@ export const SKILLS_SET = {
 		{
 			type: 'Express',
 			val: '85'
-		},
-		{
-			type: 'Go',
-			val: '40'
 		},
 		{
 			type: 'MongoDB',
@@ -72,7 +71,7 @@ export const SKILLS_SET = {
 		},
 		{
 			type: 'Azure',
-			val: '50'
+			val: '40'
 		},
 		{
 			type: 'CI/CD(Jenkins, Travis CI)',
@@ -80,7 +79,7 @@ export const SKILLS_SET = {
 		},
 		{
 			type: 'Google Cloud',
-			val: '40'
+			val: '50'
 		},
 		{
 			type: 'Docker',
@@ -95,9 +94,9 @@ export const SKILLS_SET = {
 		Frontend:
 			'I have been developing client-side application since the start of my career. React, graphQL, jest and react-testing-library is the tech stack which I am using heavily to build frontend side of applications. Apart from this, had experience working with Vue js and building hybrid mobile applications.',
 		Backend:
-			' I have used Node JS for server side coding and as a Backed for Frontend(BFF) layer for frontend applications. Experienced in both SQL and NoSQL, and have used MongoDB, PostgreSQL, firebase, redis. Also, tried my hands on go',
+			' I have used Node JS for server side coding and as a Backed for Frontend(BFF) layer for frontend applications. Experienced in both SQL and NoSQL, and have used MongoDB, PostgreSQL, firebase, redis. Also, tried my hands on go.',
 		Devops:
-			'Have experience and good understanding in deployment of applications to cloud and integrating with CI/CD pipeline. Used Docker to build images and integrate with CI tools like Travis CI and Jenkins.'
+			'Have experience and good understanding in deployment of applications to cloud and integrating with CI/CD pipeline. Used Docker to build images and integrate with CI tools like Travis CI and Jenkins. Have experience in kubernetes also.'
 	}
 };
 

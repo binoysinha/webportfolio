@@ -194,7 +194,13 @@
         font-size: .5rem;
 
         .key {
-            color: var(--white)
+            color: var(--white);
+
+            .sub-text {
+                font-size: .5rem;
+                font-weight: normal;
+                padding-left: 10px;
+            }
         }
 
         .val {

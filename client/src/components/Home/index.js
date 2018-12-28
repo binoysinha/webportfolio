@@ -16,10 +16,7 @@ class Home extends Component {
 		try {
 			const { visits } = await fetch('/api/visits')
 				.then(resp => resp.json())
-				.then(val => {
-					console.log(val);
-					return val;
-				});
+				.then(val => val);
 			this.setState({ totalVisits: visits });
 		} catch (err) {
 			console.log(err);
@@ -37,15 +34,15 @@ class Home extends Component {
 							🙏
 						</span>
 						<p>
-							My journey as web developer begins seven years ago. From showing a simple{' '}
+							My journey as a web developer begins seven years ago. From showing a simple
 							<code>{'{{hello world}} '}</code>
-							text on browser to developing complex web application aptly defined my growth as a developer.
+							text on browser to developing complex web application, aptly defines my growth as a developer.
 						</p>
 						<p>
 							I have experience in building both large e-commerce applications as well as enterprise applications. For
-							me coding is a hobby, and like building stuffs for the web. I firmly believe that learning is a lifelong
-							process. I have a passion for understanding things at a fundamental level and sharing it as clearly as
-							possible.
+							me coding is a hobby and building stuff for the web is a passion. I firmly believe that learning is a
+							lifelong process. I have a passion for understanding things at a fundamental level and sharing it as
+							clearly as possible.
 						</p>
 						<p>
 							I don't restrict myself to tech space only. I have keen interest in world affairs from politics to

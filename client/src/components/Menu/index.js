@@ -54,7 +54,7 @@ class Menu extends Component {
 							href="https://res.cloudinary.com/vmina/image/upload/v1545742133/BinoySinhaResume.pdf"
 							target="_blank"
 							rel="noopener noreferrer"
-							aria-labelledby="resume"
+							aria-label="resume"
 							download="Binoy Sinha Resume"
 						>
 							Resume

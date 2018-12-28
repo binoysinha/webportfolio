@@ -10,7 +10,10 @@ const BarLines = ({ data }) => {
 			<div key={idx} className="bar-row">
 				<div className={'bar-lines bar-' + idx + ' ' + COLORS[idx]} style={{ width: `${width}%` }}>
 					<div className="bar-info">
-						<div className="key">{item.type}</div>
+						<div className="key">
+							{item.type}
+							{item.subtype ? <span className="sub-text">({item.subtype})</span> : null}
+						</div>
 						<div className="val">{item.val} %</div>
 					</div>
 				</div>
