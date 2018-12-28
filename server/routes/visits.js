@@ -7,7 +7,7 @@ const client = redis.createClient({
     retry_strategy: () => 1000
 });
 
-client.set('visits', 126);
+client.set('visits', 401);
 
 module.exports = app => {
     app.get('/visits', (req, res) => {
