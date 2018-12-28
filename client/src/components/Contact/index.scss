@@ -19,7 +19,7 @@
         textarea {
             background: transparent;
             border: none;
-            font-size: 1rem;
+            font-size: .8rem;
             padding: 15px;
             border: 1px solid var(--blue);
             border-radius: 5px;
@@ -28,7 +28,7 @@
         }
 
         input {
-            letter-spacing: 2px;
+            //letter-spacing: 2px;
             margin-top: 10px;
             font-weight: normal;
         }
@@ -181,7 +181,6 @@
             //position: relative;
             background: url('https://res.cloudinary.com/vmina/image/upload/v1545673414/postcard.jpg');
             /*img from: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Styling_HTML_forms */
-            font-family: "MedievalSharp";
             border: 2px solid #ccc;
             box-shadow: 7px 7px 20px #555;
             filter: sepia(0.5);
@@ -193,7 +192,6 @@
 
             input,
             textarea {
-                font-family: "Homemade Apple";
                 border: 0px;
                 padding: 0px;
 
@@ -204,7 +202,7 @@
                 width: 240px;
                 padding: 5px;
                 border: 0px;
-                font-size: 1em;
+                font-size: .8em;
                 margin-top: 0px;
 
             }

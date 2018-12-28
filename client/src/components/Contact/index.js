@@ -61,7 +61,7 @@ class Contact extends Component {
 						<form className="postcard flip-card-front" id="postcard" onSubmit={this.sendmailHandler}>
 							<div className="receiver absolute">
 								<label htmlFor="r-name">To: </label>
-								<input type="text" name="receiver-name" placeholder="Binoy Sinha" disabled />
+								<input type="text" name="receiver-name" placeholder="Me" disabled />
 							</div>
 							<div className="sender absolute">
 								<label htmlFor="s-name">Name: </label>
