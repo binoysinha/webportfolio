@@ -51,7 +51,7 @@ class Menu extends Component {
 						<NavLink to="/career">Career</NavLink>
 						<NavLink to="/contact">Conatct Me</NavLink>
 						<a
-							href="https://res.cloudinary.com/vmina/image/upload/v1545742133/BinoySinhaResume.pdf"
+							href="https://res.cloudinary.com/vmina/image/upload/v1546006627/BinoySinhaResume.pdf"
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="resume"
