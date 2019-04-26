@@ -17,9 +17,6 @@ before_install:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker build -t vinay0079/webportfolio-test -f ./client/Dockerfile.dev ./client
 
-script:
-  - docker run vinay0079/webportfolio-test npm test -- --coverage
-
 deploy:
   provider: script
   script: bash ./deploy.sh
