@@ -1,9 +1,11 @@
 import React from 'react';
 
 import './index.scss';
+import Img0 from '../../assets/img/amazon.png';
 import Img1 from '../../assets/img/inmobi.png';
 import Img2 from '../../assets/img/redbus.png';
 import Img3 from '../../assets/img/TCS-Logo.png';
+
 
 const Career = () => (
 	<section className="career-sctn animated fadeIn">
@@ -24,11 +26,27 @@ const Career = () => (
 					<ul className="timeline">
 						<li>
 							<div className="timeline-image">
+								<img className="rounded-circle img-fluid" src={Img0} alt="amazon" />
+							</div>
+							<div className="timeline-panel">
+								<div className="timeline-heading">
+									<h4>March 2019</h4>
+									<h4 className="subheading">Amazon</h4>
+								</div>
+								<div className="timeline-body">
+									<p className="text-muted">
+										At Amazon, I am a part of India advertising team. Here, we build B2B products for customers to help them study their products and with the insight gathered they can focus on their products
+									</p>
+								</div>
+							</div>
+						</li>
+						<li className="timeline-inverted">
+							<div className="timeline-image">
 								<img className="rounded-circle img-fluid" src={Img1} alt="inmobi" />
 							</div>
 							<div className="timeline-panel">
 								<div className="timeline-heading">
-									<h4>April 2018</h4>
+									<h4>April 2018 - March 2019</h4>
 									<h4 className="subheading">Inmobi</h4>
 								</div>
 								<div className="timeline-body">
@@ -39,7 +57,7 @@ const Career = () => (
 								</div>
 							</div>
 						</li>
-						<li className="timeline-inverted">
+						<li>
 							<div className="timeline-image">
 								<img className="rounded-circle img-fluid" src={Img2} alt="redbus" />
 							</div>
@@ -59,7 +77,7 @@ const Career = () => (
 								</div>
 							</div>
 						</li>
-						<li>
+						<li className="timeline-inverted">
 							<div className="timeline-image">
 								<img className="rounded-circle img-fluid" src={Img3} alt="tcs" />
 							</div>
