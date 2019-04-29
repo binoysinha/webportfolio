@@ -49,7 +49,7 @@ class Menu extends Component {
 						<NavLink to="/skills">Skills</NavLink>
 						<NavLink to="/projects">Projects</NavLink>
 						<NavLink to="/career">Career</NavLink>
-						<NavLink to="/contact">Conatct Me</NavLink>
+						<NavLink to="/contact">Contact Me</NavLink>
 						{/* <a
 							href="https://res.cloudinary.com/vmina/image/upload/v1546006627/BinoySinhaResume.pdf"
 							target="_blank"
