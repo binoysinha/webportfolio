@@ -33,7 +33,7 @@ export const SKILLS_SET = {
 		},
 		{
 			type: 'Vue JS',
-			val: '70'
+			val: '85'
 		},
 		{
 			type: 'GraphQL',
@@ -49,7 +49,7 @@ export const SKILLS_SET = {
 	Backend: [
 		{
 			type: 'Node Js',
-			val: '85'
+			val: '90'
 		},
 		{
 			type: 'Express',
@@ -57,17 +57,25 @@ export const SKILLS_SET = {
 		},
 		{
 			type: 'MongoDB',
-			val: '70'
+			val: '90'
 		},
 		{
 			type: 'PostgreSQL',
 			val: '50'
+		},
+		{
+			type: 'Java',
+			val: '50'
+		},
+		{
+			type: 'Python',
+			val: '60'
 		}
 	],
 	Devops: [
 		{
 			type: 'AWS',
-			val: '50'
+			val: '70'
 		},
 		{
 			type: 'Azure',
@@ -75,19 +83,19 @@ export const SKILLS_SET = {
 		},
 		{
 			type: 'CI/CD(Jenkins, Travis CI)',
-			val: '60'
+			val: '90'
 		},
 		{
 			type: 'Google Cloud',
-			val: '50'
+			val: '60'
 		},
 		{
 			type: 'Docker',
-			val: '70'
+			val: '80'
 		},
 		{
 			type: 'Kubernetes',
-			val: '60'
+			val: '80'
 		}
 	],
 	desc: {

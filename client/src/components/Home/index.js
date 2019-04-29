@@ -34,7 +34,7 @@ class Home extends Component {
 							🙏
 						</span>
 						<p>
-							My journey as a web developer begins seven years ago. From showing a simple
+							My journey as a web application developer begins seven years ago. From showing a simple
 							<code>{'{{hello world}} '}</code>
 							text on browser to developing complex web application, aptly defines my growth as a developer.
 						</p>
